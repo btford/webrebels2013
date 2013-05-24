@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Improving your Workflow with Yeoman</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/reveal.custom.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="unicornized">
+
+<div class="reveal"><div class="slides">
+
+<section data-markdown><script type="text/template">
+# Improving your Workflow with
+
+![Yeoman Logo](img/yeoman-logo.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+# About Me
+
+[@briantford](https://twitter.com/briantford) | [github.com/btford](https://github.com/btford) | [briantford.com](http://briantford.com)
+
+* University of Michigan grad
+* AngularJS at Google
+* Yeoman Core Team Member
+<br>
+<br>
+## Thanks for having me!
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Let's Talk Tools
+
+* Improve Productivity
+* Eliminate Repetitive Tasks
+* Make the World a Better Place
+<br><br>
+## Tools are great, right?
+</script></section>
+
+<section data-markdown><script type="text/template">
+# What Other Really Smart Devs Think
+
+> "What the hell happened to hacking?"
+
+-Smart Lightning Talk Guy
+<br><br>
+> "Tools are ready to make the jump to hyperspace" 
+
+-@reganwald
+</script></section>
+
+<section data-markdown><script type="text/template">
+# The Problem
+
+* Tools should Do One Thing Well<sup>tm</sup>
+* Learn **All the Things**
+* Connecting them is non-obvious
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Boilerplate/Seed Projects
+
+* AngularJS + Grunt + Bootstrap
+* Backbone + Foundation + Handlebars
+* Ember.js + Coffeescript + H5BP
+<br><br>
+Clone the repo, hack away!
+</script></section>
+
+<section data-markdown><script type="text/template">
+## The Problem with Boilerplates
+
+<table>
+  <tr><td>Platforms</td><td>Chrome Extension, Cordova, FirefoxOS</td></tr>
+  <tr><td>Languages</td><td>CoffeeScript, TypeScript</td></tr>
+  <tr><td>JS Frameworks</td><td>Angular, Backbone, Ember, Knockout</td></tr>
+  <tr><td>JS Modules/Loaders</td><td>ES6, AMD, CommonJS, Require.js</td></tr>
+  <tr><td>CSS Preprocessors</td><td>SASS, Stylus, LESS</td></tr>
+  <tr><td>CSS Frameworks</td><td>Boostrap, Foundation</td></tr>
+  <tr><td>Build Systems</td><td>Make, Grunt, Browserify</td></tr>
+</table>
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+## The Problem with Boilerplates
+
+O(2<sup>n</sup>) Different Boilerplates = Maintenance Nightmare
+
+![Graph of N fractorial Complexity](img/insanity-graph.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Enter Yeoman
+
+Yeoman is tool glue for hackers*
+
+<img src="/img/hammer.png" height="264px" alt="Hammer"> <img src="/img/glue.png" height="264px" alt="Glue">
+
+<small>* developers who want to get stuff done</small>
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Parts
+
+* Bower
+* Grunt
+* Libs/Frameworks
+* Testing
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Bower Logo](img/bower-logo.png)
+
+## Bower
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Bower
+
+Package manager for the web:
+
+* Install
+* Update
+* Publish
+
+JavaScript, CSS, HTML
+</script></section>
+
+<section data-markdown><script type="text/template">
+![Grunt Logo](img/grunt-logo.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Grunt
+Configurable Automation Tool:
+
+* Build
+* Lint
+* Deploy
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Grunt
+
+![Grunt Config](/img/grunt-task.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Grunt
+
+![Example grunt CLI output](/img/grunt-cli-out.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Libs/Frameworks
+* AngularJS
+* Bootstrap
+* Backbone.js
+* Ember.js
+* jQuery
+* Underscore
+
+And many more...
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Generators
+## Inspired by Rails
+
+* Scaffold an app
+  - Files (index.html, app.js)
+  - Metafiles (package.json, bower.json)
+  - Dependencies (via Bower)
+  - Build script (via Grunt)
+  - Test runner
+* Add to the scaffold as you hack
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Pick Your Own Adventure Story
+
+![yo angular](/img/yo-angular.png)
+
+</script></section>
+
+
+<section data-markdown><script type="text/template">
+# Generators
+
+* [Write your own](http://yeoman.io/generators.html)!
+* Built on Node.js
+* Published on npm
+  - Try \`npm search generator-\`
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Generators on npm (76)
+
+![generators on npm](/img/generators.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Writing a Generator
+
+![generators on npm](/img/generator-src.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Demo Time
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Connecting Generators
+
+![generator hooks](/img/hooks.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Workflow
+## Watch files:
+
+* Reload browser on save
+* Lint on save
+* Test on save
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Lessons Learned
+
+* Horizontal Architecture
+* Conventions are cool
+* Modularity
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# What's Next?
+## Social
+
+> I want tools to tell me "Devs who use Angular often use Underscore"
+
+-@raganwald (paraphrased)
+
+See: [http://insight-dashboard.herokuapp.com/](http://insight-dashboard.herokuapp.com/)
+</script></section>
+
+<section data-markdown><script type="text/template">
+# What's Next?
+## Support Other Things
+
+* [FirefoxOS](https://plus.google.com/+AddyOsmani/posts/FkGQ8MMDuZq)
+* npm + Browserify ?
+* Polymer ?
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# What's Next?
+## Full Stack
+
+* Generate Offline Model Code
+* Sync with Database
+  - hood.ie ?
+  - couchdb / pouchdb ?
+  - [your fav db here] ?
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+![Twitter convo](/img/tweet.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Yeoman Summary
+
+* Combines tools
+  - Bower
+  - Grunt
+* Not perfect
+  - More Generators
+  - Feedback plz
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# More on Yeoman
+
+* [yeoman.io](http://yeoman.io)
+* [github.com/yeoman](https://github.com/yeoman)
+* [@yeoman](https://twitter.com/yeoman)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+# Questions?
+
+[@briantford](https://twitter.com/briantford) | [github.com/btford](https://github.com/btford) | [briantford.com](http://briantford.com)
+</script></section>
+
+</div></div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'zoom', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
